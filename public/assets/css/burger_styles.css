@@ -1,0 +1,172 @@
+body {
+    background-image: -webkit-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image: -moz-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image: -ms-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image: -o-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image: linear-gradient(top, #48C6D4, #3EACBA);
+    background-size: 100vh;
+}
+
+.patties {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.burgerholder {
+    background: #603813;
+    border: 1px solid #42210b;
+    background-image: -webkit-linear-gradient(top, #603813, #42210b);
+    background-image: -moz-linear-gradient(top, #603813, #42210b);
+    background-image: -ms-linear-gradient(top, #603813, #42210b);
+    background-image: -o-linear-gradient(top, #603813, #42210b);
+    background-image: linear-gradient(top, #603813, #42210b);
+    box-shadow: 0 2px 0 #42210b, 0 4px 2px rgba(0, 0, 0, .5);
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+.form-control{
+    font-size: 24px;
+    border: 1px solid #14830a;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+
+    font-size: 24px;
+}
+
+::-moz-placeholder {
+    font-size: 24px;
+}
+
+:-ms-input-placeholder {
+    font-size: 24px;
+}
+
+:-moz-placeholder {
+    font-size: 24px;
+}
+
+.submit-btn {
+    font-family: 'Luckiest Guy', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7);
+    padding: .4rem .5rem 0rem;
+    background: #27ad1b;
+    border: 1px solid #14830a;
+    background-image: -webkit-linear-gradient(top, #27ad1b, #14830a);
+    background-image: -moz-linear-gradient(top, #27ad1b, #14830a);
+    background-image: -ms-linear-gradient(top, #27ad1b, #14830a);
+    background-image: -o-linear-gradient(top, #27ad1b, #14830a);
+    background-image: linear-gradient(top, #27ad1b, #14830a);
+    width: 100%;
+}
+
+.devour {
+    font-size: 18px;
+    font-family: 'Luckiest Guy', cursive;
+    color: rgb(221, 36, 5);
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.7);
+    padding: .4rem .5rem 0rem;
+    margin-right: 0.25rem;
+    background: #fbb03b;
+    border: 1px solid #f9bb6b;
+    background-image: -webkit-linear-gradient(top, #f9c580, orange);
+    background-image: -moz-linear-gradient(top, #f9c580, orange));
+    background-image: -ms-linear-gradient(top, #f9c580, orange)
+    background-image: -o-linear-gradient(top, #f9c580, orange));
+    background-image: linear-gradient(top, #f9c580, orange));
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 2px 0 #d49228, 0 4px 2px rgba(0, 0, 0, .5);
+}
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3.5rem;
+    color: orange;
+    text-shadow: 5px 3px 0 rgba(255, 205, 54, 0.7);
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.5rem;
+    color: rgb(221, 36, 5);
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.7);
+}
+
+.burgername {
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: white;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+    font-size: 24px;
+}
+
+.jumbotron {
+    margin-top: 2rem;
+    background-color: #ffffff;
+    border: 3px solid rgb(0, 149, 169);
+    padding: 1rem;
+}
+
+.logo {
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+.burgercol {
+    display: flex;
+    justify-content: right;
+}
+
+.titlecol {
+    display: flex;
+    align-items: flex-end;
+}
+
+.eaten {
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: white;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+    font-size: 14px;
+}
+
+.greyed {
+    background: rgb(143, 147, 148);
+    border: 1px solid rgb#333333;
+    background-image: -webkit-linear-gradient(top, #575757, #333333);
+    background-image: -moz-linear-gradient(top, #575757, #333333);
+    background-image: -ms-linear-gradient(top, #575757, #333333);
+    background-image: -o-linear-gradient(top, #575757, #333333);
+    background-image: linear-gradient(top, #575757, #333333);
+    box-shadow: 0 2px 0 #333333, 0 4px 2px rgba(0, 0, 0, .5);
+    color: gray;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.create-burger {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bunimg {
+    width: 100%;
+}
+.notice{
+    font-size: 20px;
+    margin-bottom: 1rem;
+}

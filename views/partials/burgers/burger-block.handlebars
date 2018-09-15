@@ -1,0 +1,4 @@
+<div class = "burgerholder{{#if greyClass}} greyed{{/if}}">
+	<div><p class ="burgername {{#if greyClass}}strike{{/if}}">{{burger_name}}</p>{{#if greyClass}}<p class = "eaten">Eaten: {{timeEaten}}</p>{{/if}}</div>
+	{{#if eatBtn}}<div><button class="devour btn" data-id="{{id}}">EAT</button></div>{{/if}}
+</div>

@@ -1,0 +1,55 @@
+<div class="container-fluid">
+    <div class="container-fluid">
+        <div class="jumbotron container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-7 titlecol d-flex flex-row-reverse">
+                    <h1>EAT-DA-BURGER</h1>
+                </div>
+                <div class="col-5 burgercol">
+                    <img class="logo" src="/assets/img/burger_burger.png">
+                </div>
+            </div>
+            <form class="create-burger">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <input class="form-control" id="new-burger" placeholder="Add a burger" type="text">
+                    </div>
+                    <div class="col-2 d-flex flex-row-reverse">
+                        <button type="submit" class="btn btn-success submit-btn">Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="topbun" id="colortop">
+                    <h3>UNEATEN</h3>
+                    <img class="bunimg" src="/assets/img/burger_topbuncolor.png">
+                </div>
+                <div class="patties">
+                    {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block eatBtn=true greyClass=false}} {{/unless}} {{/each}}
+                </div>
+                <div class="bottombun" id="colorbottom">
+                    <img class="bunimg" src="/assets/img/burger_bottombuncolor.png">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="topbun" id="greytop">
+                    <h3>EATEN</h3>
+                    <img class="bunimg" src="/assets/img/burger-03.png">
+                </div>
+                <div class="patties">
+                    {{#each burgers}} {{#if devoured}} {{> burgers/burger-block eatBtn=false greyClass=true}} {{/if}} {{/each}}
+                </div>
+                <div class="bottombun" id="greybottom">
+                    <img class="bunimg" src="/assets/img/burger-05.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <p class="eaten notice">All illustrations © Lucy McGuigan 2018</p>
+    </div>
+</div>
