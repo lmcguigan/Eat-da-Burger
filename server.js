@@ -23,5 +23,4 @@ app.use(routes);
 // Starts the server to begin listening
 // =============================================================
 app.listen(process.env.PORT || 5000, function() {
-  console.log("App listening on http://localhost:" + PORT);
 });
