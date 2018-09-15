@@ -4,7 +4,6 @@ var bodyParser = require("body-parser");
 
 // =============================================================
 var app = express();
-var PORT = process.env.PORT || 5000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -23,6 +22,6 @@ app.use(routes);
 
 // Starts the server to begin listening
 // =============================================================
-app.listen(PORT, function() {
+app.listen(process.env.PORT || 5000, function() {
   console.log("App listening on http://localhost:" + PORT);
 });
