@@ -4,13 +4,21 @@ $(function () {
         var newBurger = {
             burger_name: $("#new-burger").val().trim(),
         };
-        $.post("/api/burgers", newBurger)
-            .then(function (data) {
-                location.reload();
-            });
-        $("#new-burger").val("");
+        if (newBurger.burger_name === "") {
+            //show modal
+            $("#error-modal").css("display", "block")
+        }
+        else {
+            $.post("/api/burgers", newBurger)
+                .then(function (data) {
+                    location.reload();
+                });
+            $("#new-burger").val("");
+        }
     });
-
+    $(".got-it").on("click", function (event) {
+        $("#error-modal").css("display", "none")
+    });
     $(".devour").on("click", function (event) {
         var id = $(this).data("id");
         console.log("ID: " + id);
@@ -28,6 +36,6 @@ $(function () {
         );
     });
 });
-$( document ).click(function() {
-    $( ".burgerholder" ).effect( "bounce", "slow" );
+$(document).click(function () {
+    $(".burgerholder").effect("bounce", "slow");
 });

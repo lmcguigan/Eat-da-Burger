@@ -2,8 +2,17 @@
     <div class="container-fluid">
         <div class="jumbotron container-fluid">
             <div class="row justify-content-center">
-                <div class="col-7 titlecol d-flex flex-row-reverse">
-                    <h1>EAT-DA-BURGER</h1>
+                <div class="col-7 align-self-end">
+                    <div class="row">
+                        <div class="col-12 text-right">
+                            <h1>EAT-DA-BURGER</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-right">
+                            <p class="notice green-text">All illustrations © Lucy McGuigan 2018</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-5 burgercol">
                     <img class="logo" src="/assets/img/burger_burger.png">
@@ -12,7 +21,8 @@
             <form class="create-burger">
                 <div class="row justify-content-center">
                     <div class="col-8">
-                        <input class="form-control" id="new-burger" placeholder="Add a burger" type="text">
+                        <input class="form-control" id="new-burger" placeholder="Write the name of the burger here!"
+                            type="text">
                     </div>
                     <div class="col-2 d-flex flex-row-reverse">
                         <button type="submit" class="btn btn-success submit-btn">Add</button>
@@ -29,7 +39,8 @@
                     <img class="bunimg" src="/assets/img/burger_topbuncolor.png">
                 </div>
                 <div class="patties">
-                    {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block eatBtn=true greyClass=false}} {{/unless}} {{/each}}
+                    {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block eatBtn=true greyClass=false}}
+                    {{/unless}} {{/each}}
                 </div>
                 <div class="bottombun" id="colorbottom">
                     <img class="bunimg" src="/assets/img/burger_bottombuncolor.png">
@@ -41,7 +52,8 @@
                     <img class="bunimg" src="/assets/img/burger-03.png">
                 </div>
                 <div class="patties">
-                    {{#each burgers}} {{#if devoured}} {{> burgers/burger-block eatBtn=false greyClass=true}} {{/if}} {{/each}}
+                    {{#each burgers}} {{#if devoured}} {{> burgers/burger-block eatBtn=false greyClass=true}} {{/if}}
+                    {{/each}}
                 </div>
                 <div class="bottombun" id="greybottom">
                     <img class="bunimg" src="/assets/img/burger-05.png">
@@ -49,7 +61,14 @@
             </div>
         </div>
     </div>
+</div>
+<div id="error-modal" class="modal">
     <div class="row justify-content-center">
-        <p class="eaten notice">All illustrations © Lucy McGuigan 2018</p>
+        <div class="modal-content col-11 col-sm-11 col-md-9 col-lg-6 col-xl-5">
+            <h1>Uh-oh!</h1>
+            <p class="notice green-text pad-text">You haven't entered a name for your burger. Please provide a name and
+                try again!</p>
+            <button class="btn btn-success got-it">Okay, got it!</button>
+        </div>
     </div>
 </div>
